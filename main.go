@@ -47,7 +47,8 @@ func main() {
 	}
 
 	discord, err := discordgo.New("Bot " + string(token))
-	discord.Identify.Intents = discordgo.IntentsGuildMessages
+	discord.Identify.Intents = discordgo.IntentsGuilds | discordgo.IntentsGuildMessages
+	discord.AddHandler(onReady)
 
 	err = discord.Open()
 	if err != nil {
@@ -70,8 +71,20 @@ func main() {
 	time.Sleep(time.Second * 2)
 
 	// Wait here until CTRL-C or other term signal is received.
-	fmt.Println("Bot is now running.  Press CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	<-sc
+}
+
+// This function will be called (due to AddHandler above) when the bot receives
+// the "ready" event from Discord.
+func onReady(s *discordgo.Session, _ *discordgo.Ready) {
+
+	err := s.UpdateGameStatus(0, "Being a catto")
+	if err != nil {
+		fmt.Println("failed to update game status", err)
+	}
+
+	time.Sleep(time.Second * 2)
+	fmt.Println("Bot is now running.  Press CTRL-C to exit.")
 }
