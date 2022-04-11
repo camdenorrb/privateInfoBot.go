@@ -207,7 +207,7 @@ func (module *LongevityIORoadmapUpdateModule) difference(oldValues []*LongevityC
 
 func (module *LongevityIORoadmapUpdateModule) pullItems() ([]*LongevityChangeLogEntry, error) {
 
-	fmt.Printf("(%v) Pulling: %v\n", time.Now().Format(time.RFC822), roadmapURL)
+	fmt.Printf("(%v) Pulling: %v\n", time.Now().Format("02 Jan 2006 03:04PM MST"), roadmapURL)
 
 	client := new(http.Client)
 

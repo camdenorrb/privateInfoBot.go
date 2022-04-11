@@ -257,7 +257,7 @@ func (module *RSSUpdateModule) itemsToDefaultMessages(items []*gofeed.Item) (mes
 
 func (module *RSSUpdateModule) pullItems() ([]*gofeed.Item, error) {
 
-	fmt.Printf("(%v) Pulling: %v\n", time.Now().Format(time.RFC822), module.rssFeed.FeedURL)
+	fmt.Printf("(%v) Pulling: %v\n", time.Now().Format("02 Jan 2006 03:04PM MST"), module.rssFeed.FeedURL)
 
 	client := new(http.Client)
 
