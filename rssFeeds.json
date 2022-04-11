@@ -1,0 +1,70 @@
+[
+	{
+		"channelName": "linuxUpdates",
+		"feedURL": "https://www.kernel.org/feeds/kdist.xml",
+		"title": "Kernel updates found!",
+		"color": "#E1AD01",
+		"description": "https://www.kernel.org/",
+		"thumbnailURL": "https://www.kernel.org/theme/images/logos/tux.png",
+		"type": "KernelOrgUpdates"
+	},
+	{
+		"channelName": "linuxUpdates",
+		"feedURL": "https://github.com/Frogging-Family/linux-tkg/commits/master.atom",
+		"title": "Kernel updates found!",
+		"color": "#E1AD01",
+		"thumbnailURL": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+		"type": "Github"
+	},
+	{
+		"channelName": "nvidiaUpdates",
+		"feedURL": "https://github.com/Frogging-Family/nvidia-all/commits/master.atom",
+		"title": "Nvidia updates found!",
+		"color": "#E1AD01",
+		"thumbnailURL": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+		"type": "Github"
+	},
+	{
+		"channelName": "longevityNews",
+		"feedURL": "https://www.reddit.com/r/longevity.rss",
+		"color": "#FF4500",
+		"thumbnailURL": "https://www.redditinc.com/assets/images/site/reddit-logo.png",
+		"type": "Reddit"
+	},
+	{
+		"channelName": "longevityNews",
+		"feedURL": "https://lifespan.io/feed/",
+		"color": "#E1AD01",
+		"author": "https://lifespan.io @${entryAuthor}",
+		"thumbnailURL": "https://pbs.twimg.com/profile_images/1303743628569968642/CAUc2pVY_400x400.jpg"
+	},
+	{
+		"channelName": "longevityNews",
+		"feedURL": "https://longevity.technology/feed/",
+		"author": "https://longevity.technology",
+		"color": "#79BF43",
+		"thumbnailURL": "https://www.longevity.technology/wp-content/uploads/2019/02/fav-2-100x100.png"
+	},
+	{
+		"channelName": "longevityNews",
+		"fileName": "youtube.com_lifespan_extension_advocacy_foundation",
+		"feedURL": "https://www.youtube.com/feeds/videos.xml?channel_id=UCofPTsvqicfVFYifwB3_XhQ",
+		"type": "TitleAndLink"
+	},
+	{
+		"channelName": "longevityNews",
+		"fileName": "youtube.com_lifespan_news",
+		"feedURL": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-hyW-B6pWS8lPjZk4zLYcQ",
+		"type": "TitleAndLink"
+	},
+	{
+		"channelName": "physicsNews",
+		"feedURL": "https://phys.org/rss-feed/physics-news/",
+		"type": "TitleAndLink"
+	},
+	{
+		"channelName": "aiNews",
+		"feedURL": "https://openai.com/blog/rss/",
+		"type": "TitleAndLink"
+	}
+]
