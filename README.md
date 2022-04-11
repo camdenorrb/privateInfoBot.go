@@ -1,5 +1,7 @@
 # privateInfoBot.go
 
+[![Go](https://github.com/camdenorrb/privateInfoBot.go/actions/workflows/go.yml/badge.svg)](https://github.com/camdenorrb/privateInfoBot.go/actions/workflows/go.yml)
+
 ### Building
 Builds to the `build/` directory
 
