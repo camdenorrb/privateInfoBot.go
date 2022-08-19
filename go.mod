@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/PuerkitoBio/goquery v1.8.0
-	github.com/bwmarrin/discordgo v0.25.0
+	github.com/bwmarrin/discordgo v0.26.0
 	github.com/json-iterator/go v1.1.12
 	github.com/mmcdole/gofeed v1.1.3
 	github.com/pkg/errors v0.9.1
